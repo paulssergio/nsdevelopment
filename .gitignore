@@ -37,6 +37,7 @@
 # Build data
 /build/
 
+#symfony
 /vendor/
 /.vagrant/
 /nbproject/
