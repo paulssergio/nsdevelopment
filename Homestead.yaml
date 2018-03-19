@@ -1,0 +1,22 @@
+ip: 192.168.33.50
+memory: 2048
+cpus: 2
+provider: virtualbox
+authorize: C:\Users\sergiop\Documents\Identity.pub
+#keys:
+#    - ~/.ssh/id_rsa
+folders:
+    -
+        map: C:\Users\sergiop\Documents\NetBeansProjects\nsdevelopment
+        to: /home/vagrant/training
+        type: "nfs"
+sites:
+    -
+        map: sergio.travel
+        to: /home/vagrant/training/public
+        type: symfony4
+        php: "7.1"
+databases:
+    - travel
+name: training
+hostname: training
